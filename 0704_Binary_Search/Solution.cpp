@@ -1,5 +1,4 @@
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
@@ -30,12 +29,3 @@ public:
         return -1;
     }
 };
-
-int main()
-{
-    Solution *solution = new Solution();
-    vector<int> nums = {-1, 0, 3, 5, 9, 12};
-    int result = solution->search(nums, 9);
-    cout << "Result: " << result << endl;
-    return 0;
-}

@@ -1,5 +1,4 @@
 #include <queue>
-#include <iostream>
 
 using namespace std;
 
@@ -7,9 +6,9 @@ class MyStack
 {
 public:
     queue<int> q;
+
     MyStack()
     {
-        q = queue<int>();
     }
 
     void push(int x)
@@ -30,17 +29,13 @@ public:
         return i;
     }
 
-    int top() { return q.front(); }
+    int top()
+    {
+        return q.front();
+    }
 
-    bool empty() { return q.size() == 0; }
+    bool empty()
+    {
+        return q.size() == 0;
+    }
 };
-
-int main()
-{
-    MyStack *obj = new MyStack();
-    obj->push(1);
-    obj->push(2);
-    cout << obj->pop() << endl;
-    cout << obj->top() << endl;
-    cout << obj->empty() << endl;
-}
